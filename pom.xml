@@ -3,7 +3,30 @@
   <groupId>CAS_Project</groupId>
   <artifactId>CAS_Project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+   <build>
+        <pluginManagement>
+        <plugins>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+			</plugin>
+
+          <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+          </plugin>
+
+
+        </plugins>
+        </pluginManagement>
+    </build>
+
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
